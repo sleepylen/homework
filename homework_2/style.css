@@ -1,0 +1,189 @@
+html {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1vw;
+    max-height: 1vh;
+    margin: 0 auto;
+}
+
+.main {
+    display: grid;
+
+}
+
+.illustration {
+    position: absolute;
+    max-width: 1239px;
+    max-height: 1225px;
+    left: -69px;
+    top: -60px;
+}
+
+.registration {
+    position: absolute;
+    width: 811px;
+    height: 1080px;
+    left: 1109px;
+    top: 0px;
+
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo {
+
+    width: 72px;
+    height: 72px;
+    left: 1310px;
+    top: 179px;
+}
+
+.regi {
+    display: grid;
+
+    width: 420px;
+    height: 505px;
+}
+
+.p_regi {
+    height: 74px;
+    color: #525252;
+    margin-bottom: 32px;
+}
+
+.but_regi {
+    height: 45px;
+    background-color: #FFFFFF;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 5px;
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #828282;
+
+    text-align: center;
+}
+
+.but_regi:hover,
+.but_regi:focus,
+.but_regi:active {
+    opacity: .75;
+}
+
+.p__regi {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #DDDDDD;
+    text-align: center;
+}
+
+label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #828282;
+
+}
+
+.input {
+    width: 420px;
+    height: 45px;
+    left: 0px;
+    top: 23px;
+    margin-top: 4px;
+    margin-bottom: 24px;
+
+    border: 1px solid #DED2D9;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.regi_end {
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    margin-top: -30px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #A1A1A1;
+}
+
+.regi_link {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #7F265B;
+}
+
+.regi_link:hover,
+.regi_link:focus,
+.regi_link:active {
+    opacity: .75;
+}
+
+.regibutt_end {
+    position: static;
+    width: 420px;
+    height: 50px;
+    left: 0px;
+    top: 216px;
+
+    background: #7F265B;
+    border-radius: 6px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+
+.regibutt_end:hover,
+.regibutt_end:focus,
+.regibutt_end:active {
+    opacity: .75;
+}
+
+.p_end {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #828282;
+}
+
+.p_link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #7F265B;
+}
+
+.p_link:hover,
+.p_link:focus,
+.p_link:active {
+    opacity: .75;
+}
