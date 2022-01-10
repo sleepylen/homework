@@ -2,31 +2,19 @@ html {
     font-family: 'Nunito Sans', sans-serif;
 }
 
-.wrapper {
-    max-width: 1vw;
-    max-height: 1vh;
-    margin: 0 auto;
-}
-
 .main {
     display: grid;
-
+    grid-template-columns: 2fr 1fr;
 }
 
 .illustration {
-    position: absolute;
-    max-width: 1239px;
-    max-height: 1225px;
-    left: -69px;
-    top: -60px;
+    max-width: 60%;
+    height: 1vh;
 }
 
 .registration {
-    position: absolute;
     width: 811px;
     height: 1080px;
-    left: 1109px;
-    top: 0px;
 
     display: grid;
     justify-content: center;
@@ -34,7 +22,6 @@ html {
 }
 
 .logo {
-
     width: 72px;
     height: 72px;
     left: 1310px;
