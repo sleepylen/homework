@@ -7,14 +7,58 @@ html {
     grid-template-columns: 2fr 1fr;
 }
 
-.illustration {
-    max-width: 60%;
-    height: 1vh;
+@media screen and (max-width: 767px) {
+    .input {
+        width: 100vw;
+        height: 45px;
+        left: 0px;
+        top: 23px;
+        margin-top: 4px;
+        margin-bottom: 24px;
+
+        border: 1px solid #DED2D9;
+        box-sizing: border-box;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .illustration {
+        display: none;
+    }
+
+    .header {
+        position: fixed;
+        display: flex;
+        justify-content: flex-start;
+        height: 10vh;
+        width: 100vw;
+        background-color: #FFE6C9;
+    }
+
+    .registration {
+        width: 100vw;
+        height: 100vh;
+
+        display: grid;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .header {
+        display: none;
+    }
+
 }
 
 .registration {
     width: 811px;
-    height: 1080px;
+    max-height: 100vh;
 
     display: grid;
     justify-content: center;
