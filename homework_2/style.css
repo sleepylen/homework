@@ -13,6 +13,11 @@ html {
 }
 
 @media screen and (max-width: 767px) {
+    .wrapper {
+        width: 100vw;
+        max-width: 760px;
+    }
+
     .input {
         width: 100vw;
         height: 45px;
@@ -27,30 +32,30 @@ html {
     }
 }
 
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1024px) {
     .illustration {
         display: none;
+    }
+
+    .wrapper {
+        width: 100vw;
+        max-width: 1020px;
     }
 
     .header {
         display: flex;
         justify-content: flex-start;
         height: 10vh;
-        width: 100vw;
+        max-width: 1020px;
         background-color: #FFE6C9;
     }
 
     .header_logo {
         width: 72px;
+        padding-left: 10px;
     }
 
-    .registration {
-        width: 100vw;
-        height: 100vh;
 
-        display: grid;
-        justify-content: center;
-    }
 
     .logo {
         display: none;
