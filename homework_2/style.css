@@ -70,13 +70,6 @@ html {
     .registration {
         grid-area: registration;
     }
-
-    .regi {
-        display: grid;
-
-        width: 100vw;
-        height: 505px;
-    }
 }
 
 @media screen and (min-width:1024px) {
