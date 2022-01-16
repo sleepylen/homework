@@ -13,26 +13,47 @@ html {
 }
 
 @media screen and (max-width: 767px) {
+    .illustration {
+        display: none;
+    }
+
     .wrapper {
         width: 100vw;
-        max-width: 760px;
     }
 
-    .input {
-        width: 100vw;
-        height: 45px;
-        left: 0px;
-        top: 23px;
-        margin-top: 4px;
-        margin-bottom: 24px;
-
-        border: 1px solid #DED2D9;
-        box-sizing: border-box;
-        border-radius: 5px;
+    .header {
+        display: flex;
+        justify-content: flex-start;
+        height: 10vh;
+        max-width: 100vw;
+        background-color: #FFE6C9;
     }
+
+    .header_logo {
+        width: 72px;
+        padding-left: 10px;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        grid-template-rows: 10% 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "."
+            "registration";
+    }
+
+    .registration {
+        grid-area: registration;
+    }
+
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (min-width:768px) and (max-width:1024px) {
     .illustration {
         display: none;
     }
@@ -76,7 +97,6 @@ html {
     .header {
         display: none;
     }
-
 }
 
 .registration {
