@@ -58,6 +58,19 @@ html {
         display: none;
     }
 
+    .main {
+        display: grid;
+        grid-template-rows: 10% 1fr;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas:
+            ". . ."
+            ". registration .";
+    }
+
+    .registration {
+        grid-area: registration;
+    }
+
     .regi {
         display: grid;
 
