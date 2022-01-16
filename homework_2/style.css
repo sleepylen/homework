@@ -39,7 +39,6 @@ html {
 
     .wrapper {
         width: 100vw;
-        max-width: 1020px;
     }
 
     .header {
@@ -54,8 +53,6 @@ html {
         width: 72px;
         padding-left: 10px;
     }
-
-
 
     .logo {
         display: none;
