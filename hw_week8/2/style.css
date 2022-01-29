@@ -1,0 +1,22 @@
+/* header styles start */
+
+.header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.header__button {
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.intro-title__text {
+    font-family: 'Roboto Slab', serif;
+}
+
+.card-text {
+    font-family: 'Roboto Slab', serif;
+}
