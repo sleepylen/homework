@@ -12,21 +12,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="wrapper">
 
         <!-- Header start -->
-        <header class="header">
-            <div class="logo">
-                <img src="assets/images/logo-full.svg" alt="logo" type="image/svg">
-            </div>
-            <div>
-                <button class="header__button">
-                    <p>КОРЗИНА</p>
-                    <img src="assets/images/cart-ico.svg" alt="cart-ico">
-                </button>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img src="assets/images/logo-full.svg" alt="logo" type="image/svg">
+                </div>
+                <div>
+                    <button class="header__button">
+                        <p class="header__button-text">КОРЗИНА</p>
+                        <img src="assets/images/cart-ico.svg" alt="cart-ico">
+                    </button>
+                </div>
             </div>
         </header>
         <!-- Header end -->
@@ -36,103 +39,126 @@
             <!-- Intro start -->
             <section class="intro">
                 <div class="intro-title">
-                    <h1>Виртуальная реальность без проводов</h1>
-                    <p class="intro-title__text">Лучшее, что случалось с виртуальным миром в реальности. Новый
-                        компактный шлем без проводов
-                        и дорогих комьютеров.</p>
-                    <button class="intro-title__button">
-                        <p> Купить</p>
-                        <img src="assets/images/buy-ico.svg" alt="buy-ico">
-                    </button>
-                    <div class="intro-title__nav">
-                        <ul class="intro-title__nav-menu">
-                            <li class="intro-title__nav-link">Возможности</li>
-                            <li class="intro-title__nav-link">Где купить</li>
-                            <li class="intro-title__nav-link">Доставка</li>
-                            <li class="intro-title__nav-link">Помощь</li>
-                        </ul>
+                    <div>
+                        <h1 class="intro-title__text-main">Виртуальная реальность без проводов</h1>
+                        <p class="intro-title__text">Лучшее, что случалось с виртуальным миром в реальности. Новый
+                            компактный шлем без проводов
+                            и дорогих комьютеров.</p>
+                        <button class="intro-title__button">
+                            <p class="intro-title__button-text"> Купить</p>
+                        </button>
+                    </div>
+                    <div class="intro__img">
+                        <img src="assets/images/guy.svg" alt="intro_guy">
                     </div>
                 </div>
-                <div class="intro__img">
-                    <img src="assets/images/guy.svg" alt="intro_guy">
+                <div class="intro-title__nav">
+                    <ul class="intro-title__nav-menu">
+                        <li>
+                            <a href="#" class="intro-title__nav-link"> Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#" class="intro-title__nav-link">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#" class="intro-title__nav-link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="intro-title__nav-link">Помощь</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
             <!-- Intro end -->
 
             <!-- Content start -->
             <div class="content">
-                <h1>Возможности</h1>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <img src="assets/images/illustration-1.svg" class="card-img-top" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Без проводов</h5>
-                            <p class="card-text">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее питание,
-                                ни
-                                большое помещение, чтобы расставить трекеры.</p>
+                <h1 class="content__title">Возможности</h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card">
+                            <img src="assets/images/illustration-1.svg" class="card-img-top" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">Без проводов</h3>
+                                <p class="card-text">Шлем работает без проводов. Не нужен ни компьютер, ни внешнее
+                                    питание,
+                                    ни
+                                    большое помещение, чтобы расставить трекеры.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <img src="assets/images/illustration-2.svg" class="card-img-top" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Без компьютера</h5>
-                            <p class="card-text">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры. Наш
-                                шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card">
+                            <img src="assets/images/illustration-2.svg" class="card-img-top" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">Без компьютера</h3>
+                                <p class="card-text">Современным VR-шлемам нужен мощный компьютер, чтобы запускать игры.
+                                    Наш
+                                    шлем запускает игры из облака, поэтому просто наслаждайтесь.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <img src="assets/images/illustration-3.svg" class="card-img-top" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">До 10 часов работы</h5>
-                            <p class="card-text">Несмотря на компактность и производительность, шлем может работать до
-                                10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card">
+                            <img src="assets/images/illustration-3.svg" class="card-img-top" alt="Card image cap">
+                            <div class="card-body">
+                                <h3 class="card-title">До 10 часов работы</h3>
+                                <p class="card-text">Несмотря на компактность и производительность, шлем может работать
+                                    до
+                                    10 часов — даже, если вы играете в самые ресурсоемкие игры.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Сотни игр</h5>
-                            <p class="card-text">Уже сейчас вам доступно более сотни игр: от высокобюджетных ААА-тайтлов
-                                до маленьких независимых проектов. Скоро их станет еще больше.</p>
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Сотни игр</h3>
+                                <p class="card-text">Уже сейчас вам доступно более сотни игр: от высокобюджетных
+                                    ААА-тайтлов
+                                    до маленьких независимых проектов. Скоро их станет еще больше.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Почти даром</h5>
-                            <p class="card-text">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы
-                                существенно экономите на мощном компьютере.</p>
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Почти даром</h3>
+                                <p class="card-text">По сравнению с другими VR-шлемами наш стоит гораздо меньше. И вы
+                                    существенно экономите на мощном компьютере.</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-sm-5 col-md-5">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Новости</h5>
-                            <form action="#" role="contentinfo">
-                                <div class="input-group">
-                                    <input type="text" name="query" class="form-control" placeholder="Эл. почта"
-                                        value="">
-                                    <div class="input-group-btn">
-                                        <button type="submit" class="btn">Подписаться</button>
+                    <div class="col-lg-4 col-sm-5 col-md-5">
+                        <div class="card text-white bg-danger bg-gradient mb-3">
+                            <div class="card-body">
+                                <h3 class="card-title">Новости</h3>
+                                <form action="#" role="contentinfo">
+                                    <div class="input-group">
+                                        <input type="text" name="query" class="form-control" placeholder="Эл. почта"
+                                            value="">
+                                        <div class="input-group-btn">
+                                            <button type="submit" class="btn">Подписаться</button>
+                                        </div>
                                     </div>
-                                </div>
-                            </form>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="content__nav">
                     <ul class="content__nav-menu">
-                        <li class="content__nav-link">Возможности</li>
-                        <li class="content__nav-link">Где купить</li>
-                        <li class="content__nav-link">Доставка</li>
-                        <li class="content__nav-link">Помощь</li>
+                        <li>
+                            <a href="#" class="content__nav-link"> Возможности</a>
+                        </li>
+                        <li>
+                            <a href="#" class="content__nav-link">Где купить</a>
+                        </li>
+                        <li>
+                            <a href="#" class="content__nav-link">Доставка</a>
+                        </li>
+                        <li>
+                            <a href="#" class="content__nav-link">Помощь</a>
+                        </li>
                     </ul>
                 </div>
             </div>

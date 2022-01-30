@@ -1,22 +1,132 @@
+.wrapper {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
 /* header styles start */
 
 .header {
-    position: fixed;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+
+    margin-top: 2%;
 }
 
 .header__button {
+    width: 115px;
+    height: 38px;
+    left: 1251px;
+    top: 89px;
+
     background: #5222D0;
     border-radius: 100px;
 }
 
+.header__button-text {
+    color: white;
+}
+
+/* header  styles end */
+
+
+/* intro styles start*/
+.intro-title {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.intro-title__text-main {
+    width: 542px;
+    height: 216px;
+    margin-top: 60px;
+
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+}
+
 .intro-title__text {
+    width: 487px;
+    height: 96px;
+    margin-top: 60px;
+
     font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+
+.intro-title__button {
+    width: 270px;
+    height: 84px;
+    margin-top: 50px;
+
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.intro-title__button-text {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.intro-title__nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 60%;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.intro-title__nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: #5222D0;
+}
+
+/* intro styles end */
+
+
+/* content styles start */
+.content__title {
+    margin-bottom: 30px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 70px;
+}
+
+.card-title {
+    font-family: 'Rubik', sans-serif;
 }
 
 .card-text {
     font-family: 'Roboto Slab', serif;
 }
+
+.btn {
+    background: #5222D0;
+    border-radius: 100px;
+}
+
+.content__nav-menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.content__nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* content styles end */
