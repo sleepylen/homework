@@ -1,0 +1,40 @@
+/* spec styles start */
+
+.block-cards__title {
+    padding-left: 200px;
+}
+
+.block-cards__container {
+    display: grid;
+    gap: 70px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 216px);
+
+    justify-content: center;
+
+    padding: 40px 200px 40px 200px;
+    background-color: #F9F9F9;
+}
+
+/* spec styles start */
+
+
+/* price styles start */
+
+.block-price__container {
+    display: grid;
+    gap: 78px;
+    grid-template-columns: repeat(2, 1fr);
+
+    justify-content: center;
+    padding: 0 200px 0 200px;
+}
+
+.block-price__side {
+    display: grid;
+    grid-template-columns: 360px 86px;
+    grid-template-rows: repeat(8, 20px);
+
+}
+
+/* price styles start */
