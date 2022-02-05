@@ -1,7 +1,18 @@
 /* spec styles start */
 
 .block-cards__title {
-    padding-left: 200px;
+    padding-left: 8.21%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+
+    font-family: 'TT Hoves';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 52px;
+
+    color: white;
+    background-color: #32495E;
 }
 
 .block-cards__container {
@@ -11,9 +22,24 @@
     grid-template-rows: repeat(2, 216px);
 
     justify-content: center;
-
-    padding: 40px 200px 40px 200px;
+    padding: 50px 8.21% 60px 8.21%;
     background-color: #F9F9F9;
+}
+
+.block-cards__item1-title {
+    font-family: 'TT Hoves';
+    font-weight: 800;
+    font-style: normal;
+
+    color: #32495E;
+}
+
+.block-cards__item1-text {
+    font-family: 'TT Hoves';
+    font-weight: normal;
+    font-style: normal;
+
+    color: #32495E;
 }
 
 /* spec styles start */
@@ -21,20 +47,99 @@
 
 /* price styles start */
 
+.block-price__title {
+    padding-left: 8.21%;
+
+    font-family: 'TT Hoves';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 52px;
+}
+
 .block-price__container {
     display: grid;
-    gap: 78px;
     grid-template-columns: repeat(2, 1fr);
 
-    justify-content: center;
-    padding: 0 200px 0 200px;
+    justify-content: space-between;
+    padding: 0 8.21% 0 8.21%;
 }
 
 .block-price__side {
     display: grid;
     grid-template-columns: 360px 86px;
     grid-template-rows: repeat(8, 20px);
+    column-gap: 100px;
+    row-gap: 20px;
+}
 
+.block-price__side-main {
+    font-family: 'TT Hoves';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17.43px;
+
+    color: #32495E;
+}
+
+.block-price__side-item {
+    font-family: 'TT Hoves';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.92px;
+
+    color: #8093AC;
+}
+
+.block-price__side-price {
+    font-family: 'TT Hoves';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19.92px;
+
+    color: #32495E;
+}
+
+.block-price__button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.block-price__button {
+    border: 1px solid #32495E;
+    box-sizing: border-box;
+    border-radius: 25px;
+
+    background-color: #FFFFFF;
+}
+
+.block-price__button:hover,
+.block-price__button:focus,
+.block-price__button:active {
+    background-color: #32495E;
+}
+
+.block-price__button-text {
+    padding: 0 44px 0 44px;
+
+    font-family: 'TT Hoves';
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17.43px;
+
+    color: #32495E;
+}
+
+.block-price__button-text:hover,
+.block-price__button-text:focus,
+.block-price__button-text:active {
+    color: #FFFFFF;
 }
 
 /* price styles start */
