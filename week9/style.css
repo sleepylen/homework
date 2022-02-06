@@ -83,7 +83,16 @@
     padding: 0 8.21% 0 8.21%;
 }
 
-.block-price__side {
+.block-price__side-1 {
+    display: grid;
+    grid-template-columns: 360px 86px;
+    grid-template-rows: repeat(8, 20px);
+
+    column-gap: 100px;
+    row-gap: 20px;
+}
+
+.block-price__side-2 {
     display: grid;
     grid-template-columns: 360px 86px;
     grid-template-rows: repeat(8, 20px);
