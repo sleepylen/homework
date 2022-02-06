@@ -1,3 +1,8 @@
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
 /* spec styles start */
 
 .block-cards__title {
@@ -42,6 +47,20 @@
     color: #32495E;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-cards__container {
+        display: grid;
+        column-gap: 10px;
+        row-gap: 100px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 250px);
+
+        justify-content: center;
+        padding: 50px 8.21% 60px 8.21%;
+        background-color: #F9F9F9;
+    }
+}
+
 /* spec styles start */
 
 
@@ -61,7 +80,6 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
-    justify-content: space-between;
     padding: 0 8.21% 0 8.21%;
 }
 
@@ -69,6 +87,7 @@
     display: grid;
     grid-template-columns: 360px 86px;
     grid-template-rows: repeat(8, 20px);
+
     column-gap: 100px;
     row-gap: 20px;
 }
