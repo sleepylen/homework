@@ -8,7 +8,7 @@
 .block-cards__title {
     padding-left: 8.21%;
     padding-bottom: 10px;
-    padding-top: 20px;
+    padding-top: 10px;
 
     font-family: 'TT Hoves';
     font-weight: 800;
@@ -50,14 +50,50 @@
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     .block-cards__container {
         display: grid;
-        column-gap: 10px;
-        row-gap: 100px;
-        grid-template-columns: repeat(4, 1fr);
+
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         grid-template-rows: repeat(2, 250px);
 
         justify-content: center;
         padding: 50px 8.21% 60px 8.21%;
         background-color: #F9F9F9;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .block-cards__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .block-cards__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 200px);
+
+        justify-content: center;
+        padding: 50px 8.21% 60px 8.21%;
+        background-color: #F9F9F9;
+    }
+
+    .block-cards__item4 {
+        display: none;
+    }
+
+    .block-cards__item5 {
+        display: none;
+    }
+
+    .block-cards__item6 {
+        display: none;
+    }
+
+    .block-cards__item7 {
+        display: none;
+    }
+
+    .block-cards__item8 {
+        display: none;
     }
 }
 
@@ -168,6 +204,36 @@
 .block-price__button-text:focus,
 .block-price__button-text:active {
     color: #FFFFFF;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .block-price__side-2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .block-price__title {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .block-cards__container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .block-price__side-1 {
+        display: grid;
+        grid-template-columns: 250px 86px;
+        grid-template-rows: repeat(8, 20px);
+
+        row-gap: 30px;
+    }
+
+    .block-price__side-2 {
+        display: none;
+    }
 }
 
 /* price styles start */
