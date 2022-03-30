@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Калькулятор</h2>
+    <div class="container">
+        <input type="text" class="first-num" />
+        <div class="buttons">
+            <button class="btn plus" onclick="setSelected('plus')">+</button>
+            <button class="btn minus" onclick="setSelected('minus')">-</button>
+            <button class="btn multiply" onclick="setSelected('multiply')">x</button>
+            <button class="btn divide" onclick="setSelected('divide')">:</button>
+        </div>
+        <input type="text" class="last-num" />
+        <button class="result" onclick="showResult()">Result</button>
+    </div>
+    <div class="result-text"></div>
+
+    <h2>Смена фона по клику</h2>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
