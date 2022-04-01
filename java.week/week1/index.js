@@ -30,3 +30,40 @@ function showResult() {
         result.innerHTML = isNaN(calcResult) ? 'Пожалуйста, укажите числа' : `Ваш результат: ${calcResult}`;
     }
 }
+
+function change_color(elem, color) {
+    elem.style.background = color;
+}
+
+$(document).ready(function() {
+    let position = 0;
+    const slidesToShow = 3;
+    const slidesToScroll = 2;
+    const container = $('.slider-container');
+    const track = $('.slider-track');
+    const item = $('.slider-item');
+    const btnPrev = $('.btn-prev');
+    const btnNext = $('.btn-next');
+    const itemWidth = container.width() / slidesToShow;
+    const movePosition = slidesToScroll * itemWidth;
+
+    item.each(function (index, item) {
+        $(item).css({
+            minWidth: itemWidth,
+        });
+    });
+
+    btnNext.click(function(){
+        position += movePosition;
+    });
+
+    btnPrev.click(function(){
+        position += movePosition;
+    });
+
+    const setPosition = () => {
+        track.css({
+            transform: `translateX(${position}px)`
+        });
+    }
+});
