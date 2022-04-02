@@ -20,6 +20,11 @@
     margin-bottom: 15px;
 }
 
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+}
+
 /* Кнопки вперед и назад */
 .slider .prev, .slider .next {
     cursor: pointer;
