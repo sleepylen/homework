@@ -35,35 +35,37 @@ function change_color(elem, color) {
     elem.style.background = color;
 }
 
-$(document).ready(function() {
-    let position = 0;
-    const slidesToShow = 3;
-    const slidesToScroll = 2;
-    const container = $('.slider-container');
-    const track = $('.slider-track');
-    const item = $('.slider-item');
-    const btnPrev = $('.btn-prev');
-    const btnNext = $('.btn-next');
-    const itemWidth = container.width() / slidesToShow;
-    const movePosition = slidesToScroll * itemWidth;
+var slideIndex = 1;
+showSlides(slideIndex);
 
-    item.each(function (index, item) {
-        $(item).css({
-            minWidth: itemWidth,
-        });
-    });
+function plusSlide() {
+    showSlides(slideIndex += 1);
+}
 
-    btnNext.click(function(){
-        position += movePosition;
-    });
+function minusSlide() {
+    showSlides(slideIndex -= 1);  
+}
 
-    btnPrev.click(function(){
-        position += movePosition;
-    });
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+}
 
-    const setPosition = () => {
-        track.css({
-            transform: `translateX(${position}px)`
-        });
+function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("item");
+    var dots = document.getElementsByClassName("slider-dots_item");
+    if (n > slides.length) {
+        slideIndex = 1
     }
-});
+    if (n < 1) {
+        slideIndex = slides.length
+    }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}

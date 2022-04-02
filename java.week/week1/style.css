@@ -12,32 +12,78 @@
     border-radius: 30px;
 }
 
-.gallery {
+.slider{
+    max-width: 90%;
+    position: relative;
+    margin: auto;
     width: 600px;
-    margin: 0 auto;
+    margin-bottom: 15px;
 }
 
-.slider-container {
-    overflow: hidden;
-    background-color: pink;
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
 }
 
-.slider-track {
-    display: flex;
-    background-color: yellow;
-    transition: .2s;
+/* При наведении на кнопки добавляем фон кнопок */
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-.slider-item {
-    min-width: 200px;
-    height: 100px;
-    
-}
-
-.slider-item:nth-child(3n+1) {background-image: url(https://sun9-61.userapi.com/impg/JbTth57-cz2q4GRZ-AbQe4fQzOGk0wQb0ydSLw/4q7Szommy4k.jpg?size=948x948&quality=96&sign=4820dfbefbaadac59459ed6bb07821e6&type=album);}
-.slider-item:nth-child(3n+2) {background-image: url(https://sun9-57.userapi.com/impg/d3W5jhWUZKNFsbcNc0d88yPRk9kMhel0NkVtfw/OPwUkFCyK0s.jpg?size=1056x735&quality=96&sign=e71dc98a54354c5484464bebaa11b2d2&type=album)}
-.slider-item:nth-child(3n+3) {background-image: url(https://sun9-25.userapi.com/impg/K729snNScpUMnbHEZGionck-Zmtbic614F2GTg/pLw5iFTvZxY.jpg?size=736x736&quality=96&sign=d1d939f21352a07554a3f975aefee86b&type=album)}
-
-.slider-buttons {
+/* Кружочки */
+.slider-dots {
     text-align: center;
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+/* Анимация слайдов */
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
 }
