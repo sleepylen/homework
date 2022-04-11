@@ -1,3 +1,16 @@
+if (localStorage.getItem('style') == 'dark') {
+    document.body.classList.toggle('dark');
+}
+
+document.querySelector('#color').onclick = function (){
+    document.body.classList.toggle('dark');
+    if (document.body.getAttribute('class') == 'dark') {
+    localStorage.setItem('style', 'dark');
+    } else {
+    localStorage.setItem('style', '');
+    }
+}
+
 function setSelected(operation) {
     const selected = document.querySelector ('.btn.selected');
     if (selected) {
@@ -28,6 +41,7 @@ function showResult() {
     if (selectedButton) {
         const calcResult = calc(firstNum, lastNum, selectedButton.classList[1]);
         result.innerHTML = isNaN(calcResult) ? 'Пожалуйста, укажите числа' : `Ваш результат: ${calcResult}`;
+        result.innerHTML = isFinite(calcResult) ? `Ваш результат: ${calcResult}` : 'На ноль делить нельзя!';
     }
 }
 

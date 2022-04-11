@@ -1,3 +1,21 @@
+body {
+    background: #f4f4f4;
+    color: #373737;
+}
+
+#color {
+    color: #f4f4f4;
+    background: #373737;
+}
+.dark {
+    background: #373737;
+    color: #f4f4f4;
+}
+.dark #color {
+    color: #373737;
+    background: #f4f4f4;
+}
+
 .cards {
     display: flex;
     flex-wrap: wrap;
