@@ -261,3 +261,7 @@ label {
 .p_link:active {
     opacity: .75;
 }
+
+#errorMessage {
+    color: #7F265B;
+}
