@@ -13,7 +13,11 @@ function check()
         document.getElementById('errorMessage').innerHTML += "Ваш пароль не заполнен<br>";
     }
 
-    if(password.value.length <= 5){
+    if(password.value.length <= 5 && password.value.length != 0){
         document.getElementById('errorMessage').innerHTML += "Ваш пароль слишком короткий<br>";
+    }   
+
+    if(email.value === "usermail" && password.value === "userpass"){
+        alert("Добро пожаловать, username!");
     }
 }
