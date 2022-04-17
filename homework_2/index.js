@@ -21,3 +21,6 @@ function check()
         alert("Добро пожаловать, username!");
     }
 }
+
+let elements = document.querySelectorAll('input');
+console.log(elements);

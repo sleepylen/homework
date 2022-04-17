@@ -1,2 +1,2 @@
-/* let table = document.getElementById('age-table');
-	console.log(); */
+let arr = ["a", "b"];
+

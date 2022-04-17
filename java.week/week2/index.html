@@ -1,39 +1,22 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
 <body>
-    <form name="search">
-        <label>Поиск:
-            <input type="text" name="search"> </label>
-        <input type="submit" value="Search!"> </form>
-    <hr>
-    <form name="search-person">Поиск по посетителям:
-        <table id="age-table">
-            <tr>
-                <td>Возраст:</td>
-                <td id="age-list">
-                    <label>
-                        <input type="radio" name="age" value="young">до 18</label>
-                    <label>
-                        <input type="radio" name="age" value="mature">18-50</label>
-                    <label>
-                        <input type="radio" name="age" value="senior">старше 50</label>
-                </td>
-            </tr>
-            <tr>
-                <td>Дополнительно:</td>
-                <td>
-                    <input type="text" name="info">
-                    <input type="text" name="info">
-                    <input type="text" name="info"> </td>
-            </tr>
-        </table>
-        <input type="button" value="Search!"> </form>
-
-    <script>
-        let form = document.getElementsByName('search')[0];
-        console.log(search);
-    </script>
+    <h1>Содержание</h1>
+    <div class="contents">
+        <ul class="book">
+            <li class="chapter">Глава 1</li>
+            <li class="chapter">Глава 2</li>
+        </ul>
+    </div>
+    <script src="./index.js"></script>
 </body>
 
 </html>
