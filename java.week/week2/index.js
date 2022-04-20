@@ -1,4 +1,4 @@
-function sumInput() {
+/* function sumInput() {
     let numbers = [];
 
     while (true) {
@@ -17,4 +17,4 @@ function sumInput() {
     return sum;
 }
 
-alert( sumInput() );
+alert( sumInput() ); */

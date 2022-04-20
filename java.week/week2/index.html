@@ -6,10 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
     <h1>Домашка - 16</h1>
+
+    <div class="container">
+        <h2>Калькулятор расчета стоимости вашего авто</h2>
+        <div class="brand">
+            <label for="calc__brand">Марка авто</label>
+            <select name="calc__brand" id="calc__brand">
+                <option value="">Марка</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Ford">Ford</option>
+                <option value="Lada">Lada</option>
+                <option value="KIA">KIA</option>
+            </select>
+        </div>
+
+        <div class="model-brand">
+            <label for="calc__model-brand">Модель авто</label>
+            <select name="calc__model-brand" id="calc__model-brand">
+                <option value="">Модель</option>
+            </select>
+        </div>
+
+        <div class="fuel">
+            <h3>Тип топлива</h3>
+            <input type="radio" name="calc__fuel" value="1" />
+            Бензин <br />
+            <input type="radio" name="calc__fuel" value="2" />
+            Дизельное топливо <br />
+            <input type="radio" name="calc__fuel" value="3" />
+            Электрический <br />
+        </div>
+
+        <div class="auto-age">
+            <h3>Возраст авто</h3>
+            <input type="radio" name="calc__age" />
+            Меньше 3 лет <br />
+            <input type="radio" name="calc__age" />
+            От 3 до 5 лет <br />
+            <input type="radio" name="calc__age" />
+            От 5 до 7 лет <br />
+            <input type="radio" name="calc__age" />
+            Больше 7 лет <br />
+        </div>
+
+        <div class="calc__button">
+            <button type="submit" class="btn">Рассчитать</button>
+        </div>
+    </div>
 
 
     <script src="./index.js"></script>
