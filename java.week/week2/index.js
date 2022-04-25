@@ -18,3 +18,16 @@
 }
 
 alert( sumInput() ); */
+
+const inputs = document.querySelectorAll('input');
+const option = document.querySelectorAll('option');
+const radioBox = document.querySelectorAll('input[name="box"]');
+const radioDataStorage = document.querySelectorAll('input[name="dataStorage"]');
+const checkBox = document.querySelector('input[name="cooler"]');
+let totalPriseElement = document.querySelector(".result");
+
+function calculate() {
+    totalPrise = 0;
+
+    for 
+}

@@ -13,51 +13,88 @@
     <h1>Домашка - 16</h1>
 
     <div class="container">
-        <h2>Калькулятор расчета стоимости вашего авто</h2>
-        <div class="brand">
-            <label for="calc__brand">Марка авто</label>
-            <select name="calc__brand" id="calc__brand">
-                <option value="">Марка</option>
-                <option value="Nissan">Nissan</option>
-                <option value="Toyota">Toyota</option>
-                <option value="Ford">Ford</option>
-                <option value="Lada">Lada</option>
-                <option value="KIA">KIA</option>
-            </select>
-        </div>
+        <h2 class="title">Давай соберём тебе системный блок?</h2>
 
-        <div class="model-brand">
-            <label for="calc__model-brand">Модель авто</label>
-            <select name="calc__model-brand" id="calc__model-brand">
-                <option value="">Модель</option>
-            </select>
-        </div>
+        <form class="form">
+            <div class="processor">
+                <label for="calc__processor">Выбери себе процессор</label>
+                <select name="processor" id="calc__processor">
+                    <option value="">Твой проц</option>
+                    <option value="350">AMD Ryzen 5 5600X OEM</option>
+                    <option value="400">AMD Ryzen 9 5950X BOX</option>
+                    <option value="200">Intel Core i5-11400F OEM</option>
+                    <option value="170">Intel Core i3-10105 BOX</option>
+                </select>
+            </div>
 
-        <div class="fuel">
-            <h3>Тип топлива</h3>
-            <input type="radio" name="calc__fuel" value="1" />
-            Бензин <br />
-            <input type="radio" name="calc__fuel" value="2" />
-            Дизельное топливо <br />
-            <input type="radio" name="calc__fuel" value="3" />
-            Электрический <br />
-        </div>
+            <div class="motherBoard">
+                <label for="calc__motherBoard">Не забудь про материнскую плату</label>
+                <select name="motherBoard" id="calc__motherBoard">
+                    <option value="">Мать</option>
+                    <option value="100">GIGABYTE H410M H V3</option>
+                    <option value="110">ASUS PRIME H510M-K</option>
+                    <option value="200">GIGABYTE B550 AORUS ELITE V2</option>
+                    <option value="250">GIGABYTE Z590 GAMING X</option>
+                </select>
+            </div>
 
-        <div class="auto-age">
-            <h3>Возраст авто</h3>
-            <input type="radio" name="calc__age" />
-            Меньше 3 лет <br />
-            <input type="radio" name="calc__age" />
-            От 3 до 5 лет <br />
-            <input type="radio" name="calc__age" />
-            От 5 до 7 лет <br />
-            <input type="radio" name="calc__age" />
-            Больше 7 лет <br />
-        </div>
+            <div class="videoCard">
+                <label for="calc__videoCard">Захвати видеокарту</label>
+                <select name="videoCard" id="calc__videoCard">
+                    <option value="">Видеокарта</option>
+                    <option value="1000">MSI GeForce RTX 3080 Ti GAMING X TRIO</option>
+                    <option value="500"> MSI GeForce GTX 1660 SUPER Gaming X</option>
+                    <option value="450">GIGABYTE GeForce GTX 1660 Ti OC</option>
+                    <option value="700">GIGABYTE GeForce RTX 3070 Ti VISION OC</option>
+                </select>
+            </div>
 
-        <div class="calc__button">
-            <button type="submit" class="btn">Рассчитать</button>
-        </div>
+            <div class="powerUnit">
+                <label for="calc__powerUnit">Держи блок питания</label>
+                <select name="powerUnit" id="calc__powerUnit">
+                    <option value="">Блок питания</option>
+                    <option value="300">Corsair HX1200</option>
+                    <option value="150">Cougar VTE600</option>
+                    <option value="200">DEEPCOOL DQ750</option>
+                    <option value="170">ZALMAN GigaMax (GVII) 750W</option>
+                </select>
+            </div>
+
+            <div class="box">
+                <h3>Подберем тебе корпус?</h3>
+                <input type="radio" name="box" value="50" />
+                ZET GAMING Rare Minicase MS2 WG / беленький с решёткой <br />
+                <input type="radio" name="box" value="40" />
+                Cougar MX330-F / чёрненький <br />
+                <input type="radio" name="box" value="30" />
+                AeroCool Cylon / просто беленький <br />
+            </div>
+
+            <div class="cooler">
+                <h3>Что по охлаждению? (мы подберем оптимальное кол-во для вашей сборки)</h3>
+                <input type="checkbox" name="cooler" value="70" />
+                Больше кулеров Богу кулеров! <br />
+            </div>
+
+            <div class="dataStorage">
+                <h3>Хранение данных</h3>
+                <input type="radio" name="dataStorage" value="100" />
+                HDD 500 гб + SSD 128 гб <br />
+                <input type="radio" name="dataStorage" value="150" />
+                HDD 500 гб + SSD 250 гб <br />
+                <input type="radio" name="dataStorage" value="100" />
+                HDD 1 тб + SSD 250 гб <br />
+                <input type="radio" name="dataStorage" value="100" />
+                HDD 1 тб + SSD 500 гб <br />
+            </div>
+
+            <div class="button">
+                <button type="submit" class="btn">Рассчитать</button>
+            </div>
+
+            <div class="result"></div>
+        </form>
+
     </div>
 
 
