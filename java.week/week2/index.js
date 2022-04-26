@@ -19,12 +19,17 @@
 
 alert( sumInput() ); */
 
-const inputs = document.querySelectorAll('input');
-const option = document.querySelectorAll('option');
-const radioBox = document.querySelectorAll('input[name="box"]');
-const radioDataStorage = document.querySelectorAll('input[name="dataStorage"]');
-const checkBox = document.querySelector('input[name="cooler"]');
 const button = document.querySelector('.btn');
+
+const form = document.forms.myForm;
+const processor = form.elements.processor;
+const motherBoard = form.elements.motherBoard;
+const videoCard = form.elements.videoCard;
+const powerUnit = form.elements.powerUnit;
+const radioBox = form.elements.box;
+const checkbox = form.elements.cooler;
+const radioDataStorage = form.elements.dataStorage;
+
 let totalPriseElement = document.querySelector(".result");
 
 function calculate() {
