@@ -19,6 +19,8 @@
 
 alert( sumInput() ); */
 
+// Калькулятор расчета стоимости
+
 const button = document.querySelector('.btn');
 
 const form = document.forms.myForm;
@@ -36,3 +38,31 @@ button.addEventListener('click', function(evt){
 
     alert(`Стоимость вашего хомпуктера составляет ${sum} бубликов`)
 });
+
+// Задачи с массивами
+
+// первая
+
+let arr = ['js', 'css', 'html'];
+
+alert( arr[0] );
+
+// вторая
+
+let arr2 = [0, 1, false, 2, undefined, '', 3, null];
+
+const filteredarr2 = arr2.filter(Boolean);
+
+alert( filteredarr2 );
+
+// третья
+
+let matrix = [
+    [1, 2],
+    [1, 2, 3],
+    [1, 2, 3, 4]
+];
+
+const el = matrix.findIndex(el=>el.length>3);
+
+alert( el );
