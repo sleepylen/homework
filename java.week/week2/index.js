@@ -30,10 +30,9 @@ const radioBox = form.elements.box;
 const checkbox = form.elements.cooler;
 const radioDataStorage = form.elements.dataStorage;
 
-let totalPriseElement = document.querySelector(".result");
+button.addEventListener('click', function(evt){
+    evt.preventDefault();
+    const sum = +processor.value + +motherBoard.value + +videoCard.value + +powerUnit.value + +radioBox.value + +radioDataStorage.value; 
 
-function calculate() {
-    totalPrise = 0;
-
-    for 
-}
+    alert(`Стоимость вашего хомпуктера составляет ${sum} бубликов`)
+});
