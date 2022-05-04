@@ -96,7 +96,8 @@ alert( formatDate(new Date(new Date - 86400 * 1000)) ); */
 let button = document.querySelector('.btn');
 let result = document.getElementById('result');
 
-btn.addEventListener('click', toGenerate());
+btn.addEventListener('click', toGenerate);
+btn.addEventListener('click', toSort);
 
 function toGenerate() {
     let rand = min + Math.random() * (max + 1 - min);
@@ -104,6 +105,11 @@ function toGenerate() {
 
     console.log(rand);
 }
+
+function toSort() {
+
+}
+
 /* btn.addEventListener('click', toGenerate); */
 
 /* function toGenerate() {
